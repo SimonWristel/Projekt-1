@@ -31,11 +31,11 @@ while guesses <= 7:
         print(bcolors.YELLOW + "För lågt, skriv ett högre tal")
         
     elif guess == random_number:
-        print(bcolors.PURPLE + f'\nGrattis du har hittat talet! {random_number} på  + {guesses} försök!\n\n')
+        print(bcolors.PURPLE + f'\nGrattis du har hittat talet {random_number} på {guesses} försök!\n\n')
         break
         
     if guesses == 7:
-        print(bcolors.UNDERLINE + bcolors.BLUE + f'\nTyvärr, du hittade inte det hemliga talet: {random_number}.')
+        print(bcolors.RED + bcolors.BLUE + f'\nTyvärr, du hittade inte det hemliga talet: {random_number}.')
         break
     
         
